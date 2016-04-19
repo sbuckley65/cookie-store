@@ -1,0 +1,24 @@
+* {
+/*background-image: url(https://www.google.com/search?site=&tbm=isch&source=hp&biw=1301&bih=613&q=background+images&oq=back&gs_l=img.1.1.0l10.3052.3621.0.5961.4.4.0.0.0.0.56.210.4.4.0....0...1ac.1.64.img..0.4.207.O4_0hrCrgPs#imgrc=wxTfOBRzsHu5JM%3A);*/
+background-color: rgb(255, 255, 204);
+}
+
+h1 {
+  color:rgb(0, 0, 102);
+  font-family: 'Satisfy', cursive;; font-weight: 400;  <!-- Google font -->
+
+}
+
+h2 {
+  color:rgb(0, 0, 204);
+}
+
+h3 {
+  color:rgb(51, 102, 255);
+
+}
+
+p {
+  color:rgb(0, 51, 0);
+  font-family: 'verdana';
+}
