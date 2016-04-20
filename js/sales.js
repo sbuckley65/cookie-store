@@ -29,6 +29,7 @@ function LocationSales (storeName, minCustomer, maxCustomer, avgSales) {
     }
     return this.dSalesTotal;
   };
+  allStores.push(this);
 };
 
 //table header gets 'Location', hours from hours[], and 'Total'
@@ -52,8 +53,8 @@ function putHoursInTable() {
 }
 
 // table body gets location sales
+var appendRow = document.getElementById('store-info');
 function putSalesInTable(location) {
-  var appendRow = document.getElementById('store-info');
   var tr = document.createElement('tr');
   var th = document.createElement('th');
   th.textContent = location.storeName; //addidng location name to the first column
@@ -71,13 +72,30 @@ function putSalesInTable(location) {
   tr.appendChild(td);
 };
 
-allStores.push(new LocationSales ('Pike Place', 17, 88, 5.2));
-allStores.push(new LocationSales ('Sea Tac Airport', 6, 24, 1.2));
-allStores.push(new LocationSales ('Southcenter', 11, 38, 1.9));
-allStores.push(new LocationSales ('Bellevue', 20, 48, 3.3));
-allStores.push(new LocationSales ('Alki', 3, 24, 2.6));
+var pikePlace = new LocationSales ('Pike Place', 17, 88, 5.2);
+var seaTac = new LocationSales ('Sea Tac Airport', 6, 24, 1.2);
+var southCenter = new LocationSales ('Southcenter', 11, 38, 1.9);
+var bellevue = new LocationSales ('Bellevue', 20, 48, 3.3);
+var alki = new LocationSales ('Alki', 3, 24, 2.6);
 
 putHoursInTable();
 for(i = 0; i < allStores.length; i++){
   putSalesInTable(allStores[i]);
 }
+
+function handleAddChangeStore(event) {
+  event.preventDefault();
+  var store = event.target.store.value;
+  var minCust = parseInt(event.target.minCust.value);
+  var maxCust = parseInt(event.target.maxCust.value);
+  var averageCookie = parseInt(event.target.averageCookie.value);
+
+  appendRow.textContent = '';
+
+  var newStore = new LocationSales(store, minCust, maxCust, averageCookie);
+  for (var i = 0; i < allStores.length; i++){
+    putSalesInTable(allStores[i]);
+  }
+}
+var salesPage = document.getElementById('stores-sales');
+salesPage.addEventListener('submit', handleAddChangeStore);
