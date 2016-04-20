@@ -41,7 +41,7 @@ function putHoursInTable() {
   appendHeader.appendChild(tr);
 //adding hours to the header
   for (var i = 0; i < hours.length; i++){
-    var th = document.createElement('th');
+    th = document.createElement('th');
     th.textContent = hours[i];
     tr.appendChild(th);
   }
