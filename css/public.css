@@ -5,7 +5,9 @@ background-color: rgb(255, 255, 204);
 
 h1 {
   color:rgb(0, 0, 102);
-  font-family: 'Satisfy', cursive;; font-weight: 400;  <!-- Google font -->
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  font-size: 50px;
 
 }
 
@@ -21,4 +23,16 @@ h3 {
 p {
   color:rgb(0, 51, 0);
   font-family: 'verdana';
+}
+
+.column1, .column2 {
+  width: 50%;
+  float: left;
+  margin: 5%;
+}
+
+header {
+  /*display: flex;
+  justify-content: center;
+  flex-direction: column;*/
 }
