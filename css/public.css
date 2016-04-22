@@ -8,31 +8,73 @@ h1 {
   font-family: 'Satisfy', cursive;
   font-weight: 400;
   font-size: 50px;
+  text-align: center;
 
 }
 
 h2 {
   color:rgb(0, 0, 204);
+  margin: 20px 20px 20px 20px;
 }
 
 h3 {
   color:rgb(51, 102, 255);
+  margin: 20px 20px 20px 20px;
 
 }
 
 p {
   color:rgb(0, 51, 0);
   font-family: 'verdana';
+  margin: 20px 20px 20px 20px;
 }
 
-.column1, .column2 {
+
+.family, .donation {
+  height: 250px;
+  width: 150px;
+  float: left;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+/*.column1, .column2 {
   width: 50%;
   float: left;
   margin: 5%;
-}
+}*/
 
 header {
   /*display: flex;
   justify-content: center;
   flex-direction: column;*/
+}
+
+.salesform {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table {
+  width: 600px;
+}
+  th, td {
+    padding: 15px, 15px, 15px, 15px;
+  }
+
+th {
+  color:rgb(51, 102, 255);
+  border-top: 2px, solid, rgb(0, 0, 102);
+  border-bottom: 2px, solid, rgb(0, 0, 102);
+  border-left: p: 2px, solid, rgb(0, 0, 102);
+  border-right: 2px, solid, rgb(0, 0, 102);
+
+}
+
+.lable {
+color:rgb(51, 102, 255)
+}
+
+.button {
+  color:rgb(0, 0, 204);
 }
