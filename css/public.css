@@ -31,50 +31,40 @@ p {
 
 
 .family, .donation {
-  height: 250px;
-  width: 150px;
   float: left;
   margin-right: 10px;
   padding-bottom: 10px;
 }
 
-/*.column1, .column2 {
-  width: 50%;
-  float: left;
-  margin: 5%;
-}*/
-
-header {
-  /*display: flex;
-  justify-content: center;
-  flex-direction: column;*/
+input {
+  border: 3px solid rgb(0, 0, 102);
+  border-radius: 8px;
+  padding: 5px 5px 5px 5px;
+  margin: 15px;
+  max-width: 100px;
 }
 
-.salesform {
-  padding-top: 10px;
-  padding-bottom: 10px;
+fieldset {
+  width: 1200px;
+  border: 7px solid rgb(0, 0, 102);
+  border-radius: 75px;
+  padding: 20px;
+}
+
+button {
+  color: rgb(0, 0, 102);
+  border: 2px solid rgb(0, 0, 102);
 }
 
 table {
-  width: 600px;
+  width: 1200px;
 }
-  th, td {
-    padding: 15px, 15px, 15px, 15px;
-  }
 
 th {
   color:rgb(51, 102, 255);
-  border-top: 2px, solid, rgb(0, 0, 102);
-  border-bottom: 2px, solid, rgb(0, 0, 102);
-  border-left: p: 2px, solid, rgb(0, 0, 102);
-  border-right: 2px, solid, rgb(0, 0, 102);
 
 }
 
-.lable {
-color:rgb(51, 102, 255)
-}
-
-.button {
-  color:rgb(0, 0, 204);
+.animate-right {
+  transition-timing-function: ease-in;
 }
